@@ -11,12 +11,12 @@ public class Player {
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private int id;
 
-    /*@Column(name = "player_name")
+    @Column(name = "player_name")
     private String name;
 
     @ManyToOne
     @JoinColumn(name = "team_id")
-    private Team team;*/
+    private Team team;
 
 
 }
