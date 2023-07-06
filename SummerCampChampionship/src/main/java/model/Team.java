@@ -20,6 +20,48 @@ public class Team {
     @OneToMany(mappedBy = "team")
     private List<Player> player;
 
+    @OneToMany(mappedBy = "team")
+    private List<Game> game;
+
+    public List<Player> getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(List<Player> player) {
+        this.player = player;
+    }
+
+    public List<Game> getGame() {
+        return game;
+    }
+
+    public void setGame(List<Game> game) {
+        this.game = game;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     //games
 
