@@ -15,4 +15,16 @@ public class PlayerService {
     public List<Player> getAllPlayers(){
         return playerRepository.findAll();
     }
+
+    public void addPlayer(Player player) {
+        playerRepository.save(player);
+    }
+
+    public void updatePlayer(Player player) {
+        playerRepository.save(player);
+    }
+
+    public void deletePlayer(Player player) {
+        playerRepository.delete(player);
+    }
 }

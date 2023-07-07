@@ -15,21 +15,22 @@ public class GameController {
     private GameService gameService;
 
     @GetMapping("/all")
-    public List<Game> getAllGames(){
-
+    public List<Game> getAllGames() {
         return gameService.getAllGames();
     }
 
     @PostMapping("/add")
-    public void addGame(@RequestBody Game game){
+    public void addGame(@RequestBody Game game) {
         gameService.addGame(game);
     }
 
-    public void updateGame(Game game){
+    @PutMapping("/update")
+    public void updateGame(@RequestBody Game game) {
         gameService.updateGame(game);
     }
 
-    public void deleteGame(Game game){
+    @DeleteMapping("/delete")
+    public void deleteGame(@RequestBody Game game) {
         gameService.deleteGame(game);
     }
 }

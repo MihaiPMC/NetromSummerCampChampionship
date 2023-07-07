@@ -16,4 +16,16 @@ public class TeamService {
     public List<Team> getAllTeams(){
         return teamRepository.findAll();
     }
+
+    public void addTeam(Team team) {
+        teamRepository.save(team);
+    }
+
+    public void updateTeam(Team team) {
+        teamRepository.save(team);
+    }
+
+    public void deleteTeam(Team team) {
+        teamRepository.delete(team);
+    }
 }
