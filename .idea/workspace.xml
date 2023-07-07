@@ -5,20 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c199b3a-2ac4-4a71-97f0-40d8e4742024" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/GameRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/model/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/model/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/model/Team.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/ChampionshipApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/model/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/model/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/model/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Player.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +59,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/mihai/Info/Netrom/SummerCamp",
@@ -88,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1688658964849</updated>
       <workItem from="1688658965901" duration="6732000" />
-      <workItem from="1688731273638" duration="366000" />
+      <workItem from="1688731273638" duration="4899000" />
     </task>
     <servers />
   </component>
