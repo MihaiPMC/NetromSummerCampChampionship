@@ -20,6 +20,11 @@ public class TeamController {
         return teamService.getAllTeams();
     }
 
+    @GetMapping("all/sort={sort}")
+    public List<Team> getAllTeamsSorted(@PathVariable("sort") String sort) {
+        return teamService.getAllTeamsSorted(sort);
+    }
+
     @GetMapping("/id={id}")
     public Team getTeamById(@PathVariable("id") int id) {
         return teamService.getTeamById(id);

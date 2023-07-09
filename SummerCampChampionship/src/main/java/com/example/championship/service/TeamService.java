@@ -40,4 +40,15 @@ public class TeamService {
     public Team getTeamById(int id) {
         return teamRepository.findById(id).get();
     }
+
+    public List<Team> getAllTeamsSorted(String sort) {
+        sort = sort.toLowerCase();
+        return switch (sort) {
+            case "id" -> teamRepository.findAllByOrderByIdAsc();
+            case "name" -> teamRepository.findAllByOrderByNameAsc();
+            case "type" -> teamRepository.findAllByOrderByTypeAsc();
+            case "player" -> teamRepository.findAllByOrderByPlayerAsc();
+            default -> teamRepository.findAll();
+        };
+    }
 }

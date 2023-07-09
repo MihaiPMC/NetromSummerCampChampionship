@@ -23,8 +23,12 @@ public class Game {
     @JoinColumn(name = "team2_id")
     private Team team2;
 
+    @Column(name = "score1")
     private int score1;
+
+    @Column(name = "score2")
     private int score2;
+
 
 
 }

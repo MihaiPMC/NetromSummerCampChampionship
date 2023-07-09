@@ -39,4 +39,16 @@ public class GameService {
     public Game getGameById(int id) {
         return gameRepository.findById(id).get();
     }
+
+    public List<Game> getAllGamesSorted(String sort) {
+        sort = sort.toLowerCase();
+        return switch (sort) {
+            case "id" -> gameRepository.findAllByOrderByIdAsc();
+            case "team1" -> gameRepository.findAllByOrderByTeam1Asc();
+            case "team2" -> gameRepository.findAllByOrderByTeam2Asc();
+            case "score1" -> gameRepository.findAllByOrderByScore1Asc();
+            case "score2" -> gameRepository.findAllByOrderByScore2Asc();
+            default -> gameRepository.findAll();
+        };
+    }
 }

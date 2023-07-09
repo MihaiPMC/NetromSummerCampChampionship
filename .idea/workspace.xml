@@ -9,18 +9,14 @@
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/PlayerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/TeamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/GameRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/GameRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/PlayerRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/TeamRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/PlayerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/GameController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/GameController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/TeamController.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/controller/TeamController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/GameService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/GameService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/PlayerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/PlayerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/TeamService.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/service/TeamService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <workItem from="1688658965901" duration="6732000" />
       <workItem from="1688731273638" duration="5173000" />
       <workItem from="1688736471862" duration="4585000" />
-      <workItem from="1688846698964" duration="8710000" />
+      <workItem from="1688846698964" duration="10181000" />
     </task>
     <servers />
   </component>

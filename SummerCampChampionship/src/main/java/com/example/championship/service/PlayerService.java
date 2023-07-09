@@ -39,4 +39,15 @@ public class PlayerService {
     public Player getPlayerById(int id) {
         return playerRepository.findById(id).get();
     }
+
+    public List<Player> getAllPlayersSorted(String sort) {
+        sort = sort.toLowerCase();
+        return switch (sort) {
+            case "name" -> playerRepository.findAllByOrderByNameAsc();
+            case "surname" -> playerRepository.findAllByOrderBySurnameAsc();
+            case "age" -> playerRepository.findAllByOrderByAgeAsc();
+            case "team" -> playerRepository.findAllByOrderByTeamAsc();
+            default -> playerRepository.findAll();
+        };
+    }
 }

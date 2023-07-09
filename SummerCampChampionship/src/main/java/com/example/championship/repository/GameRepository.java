@@ -8,4 +8,13 @@ import java.util.List;
 @Repository
 public interface GameRepository extends JpaRepository<Game, Integer> {
 
+    List<Game> findAllByOrderByIdAsc();
+
+    List<Game> findAllByOrderByTeam1Asc();
+
+    List<Game> findAllByOrderByTeam2Asc();
+
+    List<Game> findAllByOrderByScore1Asc();
+
+    List<Game> findAllByOrderByScore2Asc();
 }

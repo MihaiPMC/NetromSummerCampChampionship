@@ -19,6 +19,11 @@ public class GameController {
         return gameService.getAllGames();
     }
 
+    @GetMapping("/all/sort={sort}")
+    public List<Game> getAllGamesSorted(@PathVariable("sort") String sort) {
+        return gameService.getAllGamesSorted(sort);
+    }
+
     @GetMapping("/id={id}")
     public Game getGameById(@PathVariable("id") int id) {
         return gameService.getGameById(id);

@@ -9,4 +9,11 @@ import java.util.List;
 @Repository
 public interface TeamRepository extends JpaRepository<Team, Integer> {
 
+    List<Team> findAllByOrderByIdAsc();
+
+    List<Team> findAllByOrderByNameAsc();
+
+    List<Team> findAllByOrderByTypeAsc();
+
+    List<Team> findAllByOrderByPlayerAsc();
 }

@@ -14,8 +14,11 @@ public class Player {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "player_name")
-    private String name;
+    @Column(name = "player_first_name")
+    private String firstName;
+
+    @Column(name = "player_last_name")
+    private String lastName;
 
     @Column(name = "player_age")
     private int age;
