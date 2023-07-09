@@ -36,7 +36,7 @@ public class GameService {
         gameRepository.deleteAll();
     }
 
-    public List<Game> getAllGamesByChampionshipId(Long id) {
-        return gameRepository.findAllByChampionshipId(id);
+    public Game getGameById(int id) {
+        return gameRepository.findById(id).get();
     }
 }

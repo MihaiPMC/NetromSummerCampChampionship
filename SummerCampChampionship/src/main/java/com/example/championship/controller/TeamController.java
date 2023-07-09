@@ -20,10 +20,11 @@ public class TeamController {
         return teamService.getAllTeams();
     }
 
-    @GetMapping("/one/{id}")
-    public List<Team> getAllTeamsByChampionshipId(@PathVariable("id") Long id) {
-        return teamService.getAllTeamsByChampionshipId(id);
+    @GetMapping("/id={id}")
+    public Team getTeamById(@PathVariable("id") int id) {
+        return teamService.getTeamById(id);
     }
+
 
     @PostMapping("/add")
     public void addTeam(@RequestBody Team team) {
@@ -40,7 +41,7 @@ public class TeamController {
         teamService.deleteTeam(team);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/delete/id={id}")
     public void deleteTeamById(@PathVariable("id") Long id) {
         teamService.deleteTeamById(id);
     }

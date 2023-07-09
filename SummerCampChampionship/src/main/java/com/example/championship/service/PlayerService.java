@@ -36,7 +36,7 @@ public class PlayerService {
         playerRepository.deleteAll();
     }
 
-    public List<Player> getAllPlayersByTeamId(Long id) {
-        return playerRepository.findAllByTeamId(id);
+    public Player getPlayerById(int id) {
+        return playerRepository.findById(id).get();
     }
 }

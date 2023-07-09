@@ -37,7 +37,7 @@ public class TeamService {
         teamRepository.deleteAll();
     }
 
-    public List<Team> getAllTeamsByChampionshipId(Long id) {
-        return teamRepository.findAllByChampionshipId(id);
+    public Team getTeamById(int id) {
+        return teamRepository.findById(id).get();
     }
 }

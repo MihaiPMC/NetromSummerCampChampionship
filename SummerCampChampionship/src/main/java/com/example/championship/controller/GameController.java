@@ -19,9 +19,9 @@ public class GameController {
         return gameService.getAllGames();
     }
 
-    @GetMapping("/one/{id}")
-    public List<Game> getAllGamesByChampionshipId(@PathVariable("id") Long id) {
-        return gameService.getAllGamesByChampionshipId(id);
+    @GetMapping("/id={id}")
+    public Game getGameById(@PathVariable("id") int id) {
+        return gameService.getGameById(id);
     }
 
     @PostMapping("/add")
@@ -39,7 +39,7 @@ public class GameController {
         gameService.deleteGame(game);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/delete/id={id}")
     public void deleteGameById(@PathVariable("id") Long id) {
         gameService.deleteGameById(id);
     }
