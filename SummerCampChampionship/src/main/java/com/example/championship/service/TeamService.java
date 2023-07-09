@@ -28,4 +28,16 @@ public class TeamService {
     public void deleteTeam(Team team) {
         teamRepository.delete(team);
     }
+
+    public void deleteTeamById(Long id) {
+        teamRepository.deleteById(Math.toIntExact(id));
+    }
+
+    public void deleteAllTeams() {
+        teamRepository.deleteAll();
+    }
+
+    public List<Team> getAllTeamsByChampionshipId(Long id) {
+        return teamRepository.findAllByChampionshipId(id);
+    }
 }

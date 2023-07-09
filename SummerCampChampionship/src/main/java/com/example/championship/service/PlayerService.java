@@ -27,4 +27,16 @@ public class PlayerService {
     public void deletePlayer(Player player) {
         playerRepository.delete(player);
     }
+
+    public void deletePlayerById(Long id) {
+        playerRepository.deleteById(Math.toIntExact(id));
+    }
+
+    public void deleteAllPlayers() {
+        playerRepository.deleteAll();
+    }
+
+    public List<Player> getAllPlayersByTeamId(Long id) {
+        return playerRepository.findAllByTeamId(id);
+    }
 }

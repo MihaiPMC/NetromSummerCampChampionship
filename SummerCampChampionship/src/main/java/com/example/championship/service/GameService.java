@@ -27,4 +27,16 @@ public class GameService {
     public void deleteGame(Game game) {
         gameRepository.delete(game);
     }
+
+    public void deleteGameById(Long id) {
+        gameRepository.deleteById(Math.toIntExact(id));
+    }
+
+    public void deleteAllGames() {
+        gameRepository.deleteAll();
+    }
+
+    public List<Game> getAllGamesByChampionshipId(Long id) {
+        return gameRepository.findAllByChampionshipId(id);
+    }
 }

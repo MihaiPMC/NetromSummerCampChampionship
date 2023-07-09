@@ -19,6 +19,11 @@ public class PlayerController {
         return playerService.getAllPlayers();
     }
 
+    @GetMapping("/one/{id}")
+    public List<Player> getAllPlayersByTeamId(@PathVariable("id") Long id) {
+        return playerService.getAllPlayersByTeamId(id);
+    }
+
     @PostMapping("/add")
     public void addPlayer(@RequestBody Player player) {
         playerService.addPlayer(player);
@@ -29,9 +34,18 @@ public class PlayerController {
         playerService.updatePlayer(player);
     }
 
-    @PostMapping("/delete")
+    @DeleteMapping("/delete")
     public void deletePlayer(@RequestBody Player player) {
         playerService.deletePlayer(player);
     }
 
+    @DeleteMapping("/delete/{id}")
+    public void deletePlayerById(@PathVariable("id") Long id) {
+        playerService.deletePlayerById(id);
+    }
+
+    @DeleteMapping("/deleteAll")
+    public void deleteAllPlayers() {
+        playerService.deleteAllPlayers();
+    }
 }
