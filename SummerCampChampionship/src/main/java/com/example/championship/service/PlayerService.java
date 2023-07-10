@@ -17,11 +17,24 @@ public class PlayerService {
     }
 
     public void addPlayer(Player player) {
-        playerRepository.save(player);
+        if (player.getTeam() != null) {
+            playerRepository.save(player);
+        }
+        else
+        {
+            System.out.println("Player team is null");
+        }
     }
 
     public void updatePlayer(Player player) {
-        playerRepository.save(player);
+        if(player.getTeam() != null)
+        {
+            playerRepository.save(player);
+        }
+        else
+        {
+            System.out.println("Player team is null");
+        }
     }
 
     public void deletePlayer(Player player) {

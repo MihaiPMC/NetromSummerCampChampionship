@@ -17,11 +17,26 @@ public class GameService {
     }
 
     public void addGame(Game game) {
-        gameRepository.save(game);
+        if(game.getTeam1() != null && game.getTeam2() != null)
+        {
+            gameRepository.save(game);
+        }
+        else
+        {
+            System.out.println("Game team is null");
+        }
     }
 
     public void updateGame(Game game) {
-        gameRepository.save(game);
+        if (game.getTeam1() != null && game.getTeam2() != null)
+        {
+            gameRepository.save(game);
+        }
+        else
+        {
+            System.out.println("Game team is null");
+        }
+
     }
 
     public void deleteGame(Game game) {

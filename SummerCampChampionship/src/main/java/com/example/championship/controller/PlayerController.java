@@ -15,17 +15,15 @@ public class PlayerController {
     private PlayerService playerService;
 
     @GetMapping("/all")
-    public List<Player> getAllPlayers(){
+    public List<Player> getAllPlayers() {
         return playerService.getAllPlayers();
     }
 
 
-
     @GetMapping("all/sort={sort}")
-    public List<Player> getAllPlayersSorted(@PathVariable("sort") String sort){
+    public List<Player> getAllPlayersSorted(@PathVariable("sort") String sort) {
         return playerService.getAllPlayersSorted(sort);
     }
-
 
 
     @GetMapping("/id={id}")
@@ -34,12 +32,13 @@ public class PlayerController {
     }
 
     @PostMapping("/add")
-    public void addPlayer(@RequestBody Player player) {
+    public void addPlayer( @RequestBody Player player) {
         playerService.addPlayer(player);
     }
 
     @PostMapping("/update")
     public void updatePlayer(@RequestBody Player player) {
+
         playerService.updatePlayer(player);
     }
 
