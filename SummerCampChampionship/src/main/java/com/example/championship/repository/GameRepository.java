@@ -17,4 +17,5 @@ public interface GameRepository extends JpaRepository<Game, Integer> {
     List<Game> findAllByOrderByScore1Asc();
 
     List<Game> findAllByOrderByScore2Asc();
+
 }

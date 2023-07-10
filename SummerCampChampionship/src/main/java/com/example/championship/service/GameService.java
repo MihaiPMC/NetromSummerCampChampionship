@@ -2,6 +2,7 @@ package com.example.championship.service;
 
 import com.example.championship.model.Game;
 import com.example.championship.repository.GameRepository;
+import com.example.championship.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,9 @@ import java.util.List;
 public class GameService {
     @Autowired
     private GameRepository gameRepository;
+
+    @Autowired
+    private TeamRepository teamRepository;
 
     public List<Game>getAllGames(){
         return gameRepository.findAll();
@@ -28,7 +32,8 @@ public class GameService {
     }
 
     public void updateGame(Game game) {
-        if (game.getTeam1() != null && game.getTeam2() != null)
+
+        if(game.getTeam1() != null && game.getTeam2() != null)
         {
             gameRepository.save(game);
         }
@@ -36,7 +41,6 @@ public class GameService {
         {
             System.out.println("Game team is null");
         }
-
     }
 
     public void deleteGame(Game game) {

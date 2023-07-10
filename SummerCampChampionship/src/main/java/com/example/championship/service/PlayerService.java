@@ -2,6 +2,7 @@ package com.example.championship.service;
 
 import com.example.championship.model.Player;
 import com.example.championship.repository.PlayerRepository;
+import com.example.championship.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,29 +12,30 @@ import java.util.List;
 public class PlayerService {
     @Autowired
     private PlayerRepository playerRepository;
+    @Autowired
+    private TeamRepository teamRepository;
 
     public List<Player> getAllPlayers(){
         return playerRepository.findAll();
     }
 
     public void addPlayer(Player player) {
-        if (player.getTeam() != null) {
+        if (teamRepository.findById(player.getTeam().getId()).isPresent()){
             playerRepository.save(player);
         }
         else
         {
-            System.out.println("Player team is null");
+            throw new Error("Team with id " + player.getTeam().getId() + " does not exist");
         }
     }
 
     public void updatePlayer(Player player) {
-        if(player.getTeam() != null)
-        {
+        if (teamRepository.findById(player.getTeam().getId()).isPresent()){
             playerRepository.save(player);
         }
         else
         {
-            System.out.println("Player team is null");
+            throw new Error("Team with id " + player.getTeam().getId() + " does not exist");
         }
     }
 

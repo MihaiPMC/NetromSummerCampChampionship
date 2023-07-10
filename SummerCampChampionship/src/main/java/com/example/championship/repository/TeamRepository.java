@@ -16,4 +16,5 @@ public interface TeamRepository extends JpaRepository<Team, Integer> {
     List<Team> findAllByOrderByTypeAsc();
 
     List<Team> findAllByOrderByPlayerAsc();
+
 }

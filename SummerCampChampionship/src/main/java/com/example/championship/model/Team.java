@@ -1,5 +1,6 @@
 package com.example.championship.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -19,6 +20,7 @@ public class Team {
     @Column(name = "team_name")
     private String name;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "team")
     private List<Player> player;
 
