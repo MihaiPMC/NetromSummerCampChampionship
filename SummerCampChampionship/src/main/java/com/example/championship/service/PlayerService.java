@@ -43,8 +43,9 @@ public class PlayerService {
     public List<Player> getAllPlayersSorted(String sort) {
         sort = sort.toLowerCase();
         return switch (sort) {
-            case "name" -> playerRepository.findAllByOrderByNameAsc();
-            case "surname" -> playerRepository.findAllByOrderBySurnameAsc();
+            case "id" -> playerRepository.findAllByOrderByIdAsc();
+            case "first_name" -> playerRepository.findAllByOrderByFirstNameAsc();
+            case "last_name" -> playerRepository.findAllByOrderByLastNameAsc();
             case "age" -> playerRepository.findAllByOrderByAgeAsc();
             case "team" -> playerRepository.findAllByOrderByTeamAsc();
             default -> playerRepository.findAll();
