@@ -24,8 +24,8 @@ $(document).ready(function () {
         type: "GET",
         dataType: "json",
         success: function (data) {
-            var tableContainer = $("#tableContainer");
-            makeTable(tableContainer, data);
+            var playerTableContainer = $("#playerTableContainer");
+            makeTable(playerTableContainer, data);
         },
         error: function (data) {
             alert('Error: ' + data);
