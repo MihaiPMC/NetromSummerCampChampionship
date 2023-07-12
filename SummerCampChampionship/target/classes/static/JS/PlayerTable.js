@@ -1,12 +1,12 @@
 function makeTable(container, data) {
     var table = $("<table/>").addClass('playerTable');
 
-    // var headerRow = $("<tr/>");
-    // headerRow.append($("<th/>").text("ID"));
-    // headerRow.append($("<th/>").text("FirstName"));
-    // headerRow.append($("<th/>").text("LastName"));
-    // headerRow.append($("<th/>").text("Age"));
-    // table.append(headerRow);
+    var headerRow = $("<tr/>");
+    headerRow.append($("<th/>").text("ID"));
+    headerRow.append($("<th/>").text("FirstName"));
+    headerRow.append($("<th/>").text("LastName"));
+    headerRow.append($("<th/>").text("Age"));
+    table.append(headerRow);
     $.each(data, function (rowIndex, r) {
 
         var row = $("<tr/>");

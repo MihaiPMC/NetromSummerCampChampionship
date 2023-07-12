@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c199b3a-2ac4-4a71-97f0-40d8e4742024" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/TeamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/TeamController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +103,7 @@
       <workItem from="1688731273638" duration="5173000" />
       <workItem from="1688736471862" duration="4585000" />
       <workItem from="1688846698964" duration="28862000" />
-      <workItem from="1689036798679" duration="9713000" />
+      <workItem from="1689036798679" duration="12817000" />
     </task>
     <servers />
   </component>
