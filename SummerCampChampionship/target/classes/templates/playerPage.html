@@ -3,8 +3,8 @@
 <head>
     <title>Player</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="../static/CSS/player.css">
-    <script src="../static/JS/PlayerTable.js"></script>
+    <link rel="stylesheet" href="/CSS/player.css">
+    <script src="/JS/PlayerTable.js"></script>
 
 
 </head>
@@ -14,12 +14,17 @@
 <div id="playerTableContainer"></div>
 
 <button onclick="showForm()">add player</button>
+<button onclick="deleteForm()">delete player</button>
 <form id="addForm">
     <input type="text" id="typeInput" placeholder="First Name">
     <input type="text" id="nameInput" placeholder="Last Name">
     <input type="text" id="ageInput" placeholder="Age">
     <button id="submitFormButton">Submit</button>
 </form>
+<form id="deleteForm">
+    <input type="text" id="idInput", placeholder="ID">
+</form>
+
 
 
 </body>

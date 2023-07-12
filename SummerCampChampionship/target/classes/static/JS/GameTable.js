@@ -21,6 +21,11 @@ function showForm() {
     var form = document.getElementById("addForm");
     form.style.display = "block";
 }
+function deleteForm() {
+    var form = document.getElementById("deleteForm");
+    form.style.display = "block";
+}
+
 $(document).ready(function () {
     $.ajax({
         url: "http://localhost:8080/game/all",

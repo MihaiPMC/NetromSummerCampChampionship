@@ -1,3 +1,9 @@
-#addForm{
+#addForm
+{
+    display: none;
+}
+
+#deleteForm
+{
     display: none;
 }
