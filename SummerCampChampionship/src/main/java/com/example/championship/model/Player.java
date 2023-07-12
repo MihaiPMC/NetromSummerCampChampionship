@@ -23,7 +23,7 @@ public class Player {
     @Column(name = "player_age")
     private int age;
 
-    @JsonIgnore
+    //@JsonIgnore
     @ManyToOne
     @JoinColumn(name = "team_id")
     private Team team;
