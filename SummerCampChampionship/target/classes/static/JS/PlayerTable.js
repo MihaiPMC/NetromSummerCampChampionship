@@ -19,7 +19,7 @@ function makeTable(container, data) {
 }
 
 function showForm() {
-    var form = document.getElementById("playerForm");
+    var form = document.getElementById("addForm");
     form.style.display = "block";
 }
 

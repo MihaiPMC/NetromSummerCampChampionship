@@ -18,6 +18,11 @@ function makeTable(container, data) {
     return container.append(table);
 }
 
+function showForm() {
+    var form = document.getElementById("addForm");
+    form.style.display = "block";
+}
+
 $(document).ready(function () {
     $.ajax({
         url: "http://localhost:8080/team/all",

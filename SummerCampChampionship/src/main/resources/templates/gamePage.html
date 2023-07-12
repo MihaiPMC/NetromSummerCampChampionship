@@ -4,11 +4,19 @@
     <title>Game</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../static/JS/GameTable.js"></script>
+    <link rel="stylesheet" href="../static/CSS/game.css">
 </head>
 
 <body>
 
 <div id="gameTableContainer"></div>
+
+<button onclick="showForm()">add game</button>
+<form id="addForm">
+    <input type="text" id="typeInput" placeholder="ScoreTeam1">
+    <input type="text" id="nameInput" placeholder="ScoreTeam2">
+    <button id="submitFormButton">Submit</button>
+</form>
 
 </body>
 </html>

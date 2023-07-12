@@ -3,12 +3,20 @@
 <head>
     <title>Team</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="../static/CSS/team.css">
     <script src="../static/JS/TeamTable.js"></script>
 </head>
 
 <body>
 
 <div id="teamTableContainer"></div>
+
+<button onclick="showForm()">add player</button>
+<form id="addForm">
+    <input type="text" id="typeInput" placeholder="Type">
+    <input type="text" id="nameInput" placeholder="Name">
+    <button id="submitFormButton">Submit</button>
+</form>
 
 </body>
 </html>
