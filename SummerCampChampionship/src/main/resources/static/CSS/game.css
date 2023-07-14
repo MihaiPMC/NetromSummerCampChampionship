@@ -8,9 +8,9 @@
     display: none;
 }
 
-#tableAndButtonsContainer
+.tableAndButtons
 {
-display: flex;
+    text-align: -webkit-center;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

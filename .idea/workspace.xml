@@ -6,26 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4c199b3a-2ac4-4a71-97f0-40d8e4742024" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/controller/GameController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/TeamRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/repository/TeamRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/PlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/PlayerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/player.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/player.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/JS/TeamTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/gamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/playerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/teamPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +105,7 @@
       <workItem from="1689036798679" duration="31561000" />
       <workItem from="1689209933151" duration="672000" />
       <workItem from="1689211836461" duration="817000" />
-      <workItem from="1689246944940" duration="22095000" />
+      <workItem from="1689246944940" duration="23164000" />
     </task>
     <servers />
   </component>
@@ -162,7 +150,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js</url>
-          <line>78</line>
+          <line>88</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="26" />
         </line-breakpoint>

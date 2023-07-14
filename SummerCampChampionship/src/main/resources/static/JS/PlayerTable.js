@@ -26,14 +26,42 @@ function makeTable(container, data) {
 }
 
 function showForm() {
-    var form = document.getElementById("addForm");
-    form.style.display = "block";
+    var addForm = document.getElementById("addForm");
+    var deleteForm = document.getElementById("deleteForm");
+
+    // Close deleteForm if it's open
+    if (deleteForm.style.display === "block") {
+        deleteForm.style.display = "none";
+    }
+
+    // Toggle addForm visibility
+    if (addForm.style.display === "block") {
+        addForm.style.display = "none";
+    }
+    else {
+        addForm.style.display = "block";
+    }
 }
 
+
+
 function deleteForm() {
-    var form = document.getElementById("deleteForm");
-    form.style.display = "block";
+    var addForm = document.getElementById("addForm");
+    var deleteForm = document.getElementById("deleteForm");
+
+    // Close addForm if it's open
+    if (addForm.style.display === "block") {
+        addForm.style.display = "none";
+    }
+
+    // Toggle deleteForm visibility
+    if (deleteForm.style.display === "block") {
+        deleteForm.style.display = "none";
+    } else {
+        deleteForm.style.display = "block";
+    }
 }
+
 
 $(document).ready(function () {
     $.ajax({
