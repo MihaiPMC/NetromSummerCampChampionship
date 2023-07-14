@@ -11,6 +11,13 @@ function makeTable(container, data) {
     table.append(headerRow);
     $.each(data, function (rowIndex, r) {
         var row = $("<tr/>");
+
+        var idCell = $("<td/>").text(r.id);
+        idCell.click(function () {
+            deleteGame(r.id);
+        });
+        row.append(idCell);
+
         $.each(r, function (colIndex, c) {
             if (colIndex == "team1") {
                 row.append($("<td/>").text(r.team1.name));
@@ -18,7 +25,7 @@ function makeTable(container, data) {
             else if (colIndex == "team2") {
                 row.append($("<td/>").text(r.team2.name));
             }
-            else {
+            else if(colIndex != "id") {
                 row.append($("<td/>").text(c));
             }
         });
@@ -27,14 +34,22 @@ function makeTable(container, data) {
     return container.append(table);
 }
 
+function deleteGame(gameId) {
+    $.ajax({
+        type: "DELETE",
+        url: "http://localhost:8080/game/delete/id=" + gameId,
+        success: function (response) {
+            console.log("Player deleted successfully");
+            window.location.reload();
+        },
+        error: function (error) {
+            console.log("Error:", error);
+        },
+    });
+}
+
 function showForm() {
     var addForm = document.getElementById("addForm");
-    var deleteForm = document.getElementById("deleteForm");
-
-    // Close deleteForm if it's open
-    if (deleteForm.style.display === "block") {
-        deleteForm.style.display = "none";
-    }
 
     // Toggle addForm visibility
     if (addForm.style.display === "block") {
@@ -42,25 +57,6 @@ function showForm() {
     }
     else {
         addForm.style.display = "block";
-    }
-}
-
-
-
-function deleteForm() {
-    var addForm = document.getElementById("addForm");
-    var deleteForm = document.getElementById("deleteForm");
-
-    // Close addForm if it's open
-    if (addForm.style.display === "block") {
-        addForm.style.display = "none";
-    }
-
-    // Toggle deleteForm visibility
-    if (deleteForm.style.display === "block") {
-        deleteForm.style.display = "none";
-    } else {
-        deleteForm.style.display = "block";
     }
 }
 

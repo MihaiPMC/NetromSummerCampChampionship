@@ -5,12 +5,17 @@ function makeTable(container, data) {
     headerRow.append($("<th/>").text("ID"));
     headerRow.append($("<th/>").text("Type"));
     headerRow.append($("<th/>").text("Name"));
-    //headerRow.append($("<th/>").text("GamesScore1"));
-    //headerRow.append($("<th/>").text("GamesScore2"));
     table.append(headerRow);
     $.each(data, function (rowIndex, r) {
 
         var row = $("<tr/>");
+
+        var idCell = $("<td/>").text(r.id);
+        idCell.click(function () {
+            deleteTeam(r.id);
+        });
+        row.append(idCell);
+
         $.each(r, function (colIndex, c) {
             if (colIndex == "team1Games") {
                 if (r.team1Games.length > 0) {
@@ -20,7 +25,7 @@ function makeTable(container, data) {
                 if (r.team2Games.length > 0) {
                     row.append($("<td/>").text(r.team2Games[0].score2));
                 }
-            } else {
+            } else if(colIndex != "id") {
                 row.append($("<td/>").text(c));
             }
 
@@ -30,14 +35,22 @@ function makeTable(container, data) {
     return container.append(table);
 }
 
+function deleteTeam(teamId) {
+    $.ajax({
+        type: "DELETE",
+        url: "http://localhost:8080/team/delete/id=" + teamId,
+        success: function (response) {
+            console.log("Player deleted successfully");
+            window.location.reload();
+        },
+        error: function (error) {
+            console.log("Error:", error);
+        },
+    });
+}
+
 function showForm() {
     var addForm = document.getElementById("addForm");
-    var deleteForm = document.getElementById("deleteForm");
-
-    // Close deleteForm if it's open
-    if (deleteForm.style.display === "block") {
-        deleteForm.style.display = "none";
-    }
 
     // Toggle addForm visibility
     if (addForm.style.display === "block") {
@@ -45,25 +58,6 @@ function showForm() {
     }
     else {
         addForm.style.display = "block";
-    }
-}
-
-
-
-function deleteForm() {
-    var addForm = document.getElementById("addForm");
-    var deleteForm = document.getElementById("deleteForm");
-
-    // Close addForm if it's open
-    if (addForm.style.display === "block") {
-        addForm.style.display = "none";
-    }
-
-    // Toggle deleteForm visibility
-    if (deleteForm.style.display === "block") {
-        deleteForm.style.display = "none";
-    } else {
-        deleteForm.style.display = "block";
     }
 }
 
