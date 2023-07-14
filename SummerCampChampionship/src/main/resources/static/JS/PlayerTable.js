@@ -32,18 +32,24 @@ function makeTable(container, data) {
 }
 
 function deletePlayer(playerId) {
-    $.ajax({
-        type: "DELETE",
-        url: "http://localhost:8080/player/delete/id=" + playerId,
-        success: function (response) {
-            console.log("Player deleted successfully");
-            window.location.reload();
-        },
-        error: function (error) {
-            console.log("Error:", error);
-        },
-    });
+    var confirmation = confirm("Are you sure you want to delete this player?");
+    if (confirmation) {
+        $.ajax({
+            type: "DELETE",
+            url: "http://localhost:8080/player/delete/id=" + playerId,
+            success: function (response) {
+                console.log("Player deleted successfully");
+                window.location.reload();
+            },
+            error: function (error) {
+                console.log("Error:", error);
+            },
+        });
+    } else {
+        console.log("User cancelled the deletion");
+    }
 }
+
 
 function showForm() {
     var addForm = document.getElementById("addForm");
@@ -122,16 +128,22 @@ $(document).ready(function () {
 
     $('#submitDeleteAllFormButton').click(function(e) {
         e.preventDefault();
-        $.ajax({
-            type: 'DELETE',
-            url: 'http://localhost:8080/player/deleteAll',
-            success: function(response) {
-                console.log('Players deleted successfully');
-                window.location.reload();
-            },
-            error: function(error) {
-                console.log('Error:', error);
-            }
-        });
+        var confirmation = confirm("Are you sure you want to delete all players?");
+        if (confirmation) {
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://localhost:8080/player/deleteAll',
+                success: function(response) {
+                    console.log('Players deleted successfully');
+                    window.location.reload();
+                },
+                error: function(error) {
+                    console.log('Error:', error);
+                }
+            });
+        } else {
+            console.log("User cancelled the deletion");
+        }
     });
+
 });

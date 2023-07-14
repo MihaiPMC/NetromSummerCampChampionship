@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/JS/TeamTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,7 @@
       <workItem from="1689036798679" duration="31561000" />
       <workItem from="1689209933151" duration="672000" />
       <workItem from="1689211836461" duration="817000" />
-      <workItem from="1689246944940" duration="24788000" />
+      <workItem from="1689246944940" duration="25425000" />
     </task>
     <servers />
   </component>
@@ -144,12 +143,6 @@
           <url>file://$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/service/GameService.java</url>
           <line>32</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js</url>
-          <line>126</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

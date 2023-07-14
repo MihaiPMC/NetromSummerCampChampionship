@@ -35,17 +35,22 @@ function makeTable(container, data) {
 }
 
 function deleteGame(gameId) {
-    $.ajax({
-        type: "DELETE",
-        url: "http://localhost:8080/game/delete/id=" + gameId,
-        success: function (response) {
-            console.log("Player deleted successfully");
-            window.location.reload();
-        },
-        error: function (error) {
-            console.log("Error:", error);
-        },
-    });
+    var confirmation = confirm("Are you sure you want to delete this game?");
+    if (confirmation) {
+        $.ajax({
+            type: "DELETE",
+            url: "http://localhost:8080/game/delete/id=" + gameId,
+            success: function (response) {
+                console.log("Player deleted successfully");
+                window.location.reload();
+            },
+            error: function (error) {
+                console.log("Error:", error);
+            },
+        });
+    } else {
+        console.log("User cancelled the deletion");
+    }
 }
 
 function showForm() {
@@ -113,17 +118,24 @@ $(document).ready(function () {
 
     $('#submitDeleteAllFormButton').click(function (e) {
         e.preventDefault();
-        $.ajax({
-            type: 'DELETE',
-            url: 'http://localhost:8080/game/deleteAll',
-            success: function (response) {
-                console.log('Players deleted successfully');
-                window.location.reload();
-            },
-            error: function (error) {
-                console.log('Error:', error);
-            }
-        });
+        var confirmation = confirm("Are you sure you want to delete all games?");
+        if(confirmation)
+        {
+            $.ajax({
+                type: 'DELETE',
+                url: 'http://localhost:8080/game/deleteAll',
+                success: function (response) {
+                    console.log('Players deleted successfully');
+                    window.location.reload();
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        } else
+        {
+            console.log('User cancelled the deletion');
+        }
     });
 
     $('#submitDeleteFormButton').click(function (e) {
