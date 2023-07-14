@@ -9,17 +9,24 @@
 
 <body>
 
-<div id="gameTableContainer"></div>
+<div id="tableAndButtonsContainer">
+    <div id="gameTableContainer"></div>
 
-<button onclick="showForm()">add game</button>
-<button onclick="deleteForm()">delete game</button>
-<form id="addForm">
-    <input type="text" id="typeInput" placeholder="ScoreTeam1">
-    <input type="text" id="nameInput" placeholder="ScoreTeam2">
-    <button id="submitFormButton">Submit</button>
-</form>
-<form id="deleteForm">
-    <input type="text" id="idInput", placeholder="ID">
-</form>
+    <button onclick="showForm()">add game</button>
+    <button onclick="deleteForm()">delete game</button>
+    <form id="addForm">
+        <input type="text" id="gameTypeInput" placeholder="Type">
+        <input type="text" id="firstTeamInput" placeholder="First Team">
+        <input type="text" id="secondTeamInput" placeholder="Second Team">
+        <input type="text" id="score1Input" placeholder="ScoreTeam1">
+        <input type="text" id="score2Input" placeholder="ScoreTeam2">
+        <button id="submitAddFormButton">Submit</button>
+    </form>
+    <form id="deleteForm">
+        <input type="text" id="idDelete" placeholder="ID">
+        <button id="submitDeleteFormButton">Delete</button>
+        <button id="submitDeleteAllFormButton">Delete All</button>
+    </form>
+</div>
 </body>
 </html>

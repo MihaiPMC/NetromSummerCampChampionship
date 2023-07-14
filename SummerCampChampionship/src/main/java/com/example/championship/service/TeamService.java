@@ -14,7 +14,7 @@ public class TeamService {
     private TeamRepository teamRepository;
 
     public List<Team> getAllTeams(){
-        return teamRepository.findAll();
+        return teamRepository.findAllByOrderByIdAsc();
     }
 
     public void addTeam(Team team) {

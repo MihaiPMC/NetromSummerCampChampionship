@@ -7,7 +7,8 @@ import lombok.Data;
 import java.util.List;
 
 @Entity
-@Table(name = "team")
+@Table(name = "team",
+        uniqueConstraints = @UniqueConstraint(columnNames = {"team_name", "team_type"}))
 @Data
 public class Team {
     @Id
@@ -24,12 +25,11 @@ public class Team {
     @OneToMany(mappedBy = "team")
     private List<Player> player;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "team1")
     private List<Game> team1Games;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "team2")
     private List<Game> team2Games;
-
-
-
 }

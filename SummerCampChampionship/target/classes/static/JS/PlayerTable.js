@@ -5,11 +5,20 @@ function makeTable(container, data) {
     headerRow.append($("<th/>").text("FirstName"));
     headerRow.append($("<th/>").text("LastName"));
     headerRow.append($("<th/>").text("Age"));
+    headerRow.append($("<th/>").text("Team"));
     table.append(headerRow);
     $.each(data, function (rowIndex, r) {
         var row = $("<tr/>");
         $.each(r, function (colIndex, c) {
-            row.append($("<td/>").text(c));
+            if(colIndex == "team")
+            {
+                row.append($("<td/>").text(r.team.name));
+            }
+
+            else{
+                row.append($("<td/>").text(c));
+            }
+
         });
         table.append(row);
     });
@@ -42,8 +51,8 @@ $(document).ready(function () {
 
     $('#submitAddFormButton').click(function(e) {
         e.preventDefault();
-        var firstName = $('#typeInput').val();
-        var lastName = $('#nameInput').val();
+        var firstName = $('#firstNameInput').val();
+        var lastName = $('#lastNameInput').val();
         var age = $('#ageInput').val();
         var teamId = $('#idInput').val();
         teamId = Number(teamId);

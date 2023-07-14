@@ -13,12 +13,12 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @JsonIgnore
+    //@JsonIgnore
     @ManyToOne
     @JoinColumn(name = "team1_id")
     private Team team1;
 
-    @JsonIgnore
+    //@JsonIgnore
     @ManyToOne
     @JoinColumn(name = "team2_id")
     private Team team2;
@@ -28,6 +28,9 @@ public class Game {
 
     @Column(name = "score2")
     private int score2;
+
+    @Column(name = "type")
+    private String type;
 
 
 

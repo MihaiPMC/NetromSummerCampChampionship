@@ -32,6 +32,7 @@ public class GameController {
 
     @PostMapping("/add")
     public void addGame(@RequestBody Game game) {
+
         gameService.addGame(game);
     }
 

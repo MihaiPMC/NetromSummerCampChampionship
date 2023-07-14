@@ -16,7 +16,7 @@ public class PlayerService {
     private TeamRepository teamRepository;
 
     public List<Player> getAllPlayers(){
-        return playerRepository.findAll();
+        return playerRepository.findAllByOrderByIdAsc();
     }
 
     public void addPlayer(Player player) {
