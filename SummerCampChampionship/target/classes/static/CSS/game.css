@@ -1,13 +1,110 @@
-#addForm
-{
-    display: none;
+#addForm {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: opacity 0.5s, height 0.5s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    width: 60%;
 }
 
+#addForm input[type="text"] {
+    margin-right: 10px;
+    padding: 6px;
+    width: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
 
-.tableAndButtons
-{
+}
+
+#submitAddFormButton, #submitDeleteAllFormButton, #addGameButton {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+#addGameButton {
+    background-color: #007bff;
+}
+
+#addGameButton:hover {
+    background-color: #004fa3;
+    color: white;
+}
+
+#submitDeleteAllFormButton {
+    background-color: #dc3545;
+}
+
+#submitDeleteAllFormButton:hover {
+    background-color: #a71e32;
+    color: white;
+}
+
+#submitAddFormButton {
+    background-color: #28a745;
+}
+
+#submitAddFormButton:hover {
+    background-color: #1e6b34;
+    color: white;
+}
+
+.tableAndButtons {
     text-align: -webkit-center;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
+.gameTable {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.gameTable th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+}
+
+.gameTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.gameTable tr:nth-child(odd) {
+    background-color: #eaf0f6;
+}
+
+.gameTable td {
+    padding: 6px;
+    border-bottom: 1px solid #ccc;
+}
+
+.gameTable tr:last-child td {
+    border-bottom: 0;
+}
+
+.gameTable td {
+    border-right: 1px solid #ccc;
+}
+
+.gameTable td:last-child {
+    border-right: 0;
+}
+
