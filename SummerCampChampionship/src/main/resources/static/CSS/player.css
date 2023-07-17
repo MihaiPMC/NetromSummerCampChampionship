@@ -16,7 +16,6 @@
     width: 150px;
     border-radius: 5px;
     margin-left: 10px;
-
 }
 
 #submitAddFormButton, #submitDeleteAllFormButton, #addPlayerButton {
@@ -66,7 +65,7 @@
     align-items: center;
 }
 
-.playerTable {
+#playerTable {
     width: 90%;
     border-collapse: separate;
     border-spacing: 0;
@@ -75,36 +74,43 @@
     margin-bottom: 20px;
 }
 
-.playerTable th {
-    background-color: #f2f2f2;
+#playerTable th {
+    background-color: #C4D8E2;
     color: #333;
     font-weight: bold;
     padding: 8px;
     text-align: left;
 }
 
-.playerTable tr:nth-child(even) {
+#playerTable tr {
     background-color: #f9f9f9;
 }
 
-.playerTable tr:nth-child(odd) {
-    background-color: #eaf0f6;
+#playerTable tr:nth-child(even) {
+    background-color:  #B0E0E6
 }
 
-.playerTable td {
+#playerTable tr:nth-child(odd) {
+    background-color: #FFFFF0;
+}
+
+#playerTable tr:hover {
+    background-color: #87CEEB;
+}
+
+#playerTable td {
     padding: 6px;
     border-bottom: 1px solid #ccc;
 }
 
-.playerTable tr:last-child td {
+#playerTable tr:last-child td {
     border-bottom: 0;
 }
 
-.playerTable td {
+#playerTable td {
     border-right: 1px solid #ccc;
 }
 
-.playerTable td:last-child {
+#playerTable td:last-child {
     border-right: 0;
 }
-

@@ -16,7 +16,7 @@ public class GameService {
     @Autowired
     private TeamRepository teamRepository;
 
-    public List<Game>getAllGames(){
+    public List<Game> getAllGames() {
         return gameRepository.findAll();
     }
 
@@ -25,8 +25,7 @@ public class GameService {
         String team2Name = game.getTeam2().getName();
         String gameType = game.getType();
 
-        if(team2Name.equals(team1Name))
-        {
+        if (team2Name.equals(team1Name)) {
             throw new IllegalArgumentException("Team names are equal");
         }
 
@@ -34,25 +33,20 @@ public class GameService {
         game.setTeam2(teamRepository.findByNameAndType(team2Name, gameType));
 
 
-
-        if(game.getTeam1() != null && game.getTeam2() != null)
-        {
+        if (game.getTeam1() != null && game.getTeam2() != null) {
             gameRepository.save(game);
         }
-        else
-        {
+        else {
             System.out.println("Game team is null");
         }
     }
 
     public void updateGame(Game game) {
 
-        if(game.getTeam1() != null && game.getTeam2() != null)
-        {
+        if (game.getTeam1() != null && game.getTeam2() != null) {
             gameRepository.save(game);
         }
-        else
-        {
+        else {
             System.out.println("Game team is null");
         }
     }
@@ -73,9 +67,11 @@ public class GameService {
         return gameRepository.findById(id).get();
     }
 
-    public List<Game> getAllGamesSorted(String sort) {
+    public List<Game> getAllGamesSorted(String sort, String ord) {
+        ord = ord.toLowerCase();
         sort = sort.toLowerCase();
-        return switch (sort) {
+
+        List<Game> print = switch (sort) {
             case "id" -> gameRepository.findAllByOrderByIdAsc();
             case "team1" -> gameRepository.findAllByOrderByTeam1Asc();
             case "team2" -> gameRepository.findAllByOrderByTeam2Asc();
@@ -83,5 +79,18 @@ public class GameService {
             case "score2" -> gameRepository.findAllByOrderByScore2Asc();
             default -> gameRepository.findAll();
         };
+
+        if(ord == "desc")
+        {
+            for(int i = 0; i < print.size()/2; i++)
+            {
+                Game temp = print.get(i);
+                print.set(i, print.get(print.size() - i - 1));
+                print.set(print.size() - i - 1, temp);
+            }
+        }
+
+        return print;
+
     }
 }

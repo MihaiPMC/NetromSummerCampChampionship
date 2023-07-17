@@ -20,9 +20,9 @@ public class GameController {
         return gameService.getAllGames();
     }
 
-    @GetMapping("/all/sort={sort}")
-    public List<Game> getAllGamesSorted(@PathVariable("sort") String sort) {
-        return gameService.getAllGamesSorted(sort);
+    @GetMapping("/all/sort={sort}/ord={ord}")
+    public List<Game> getAllGamesSorted(@PathVariable("sort") String sort, @PathVariable("ord") String ord) {
+        return gameService.getAllGamesSorted(sort, ord);
     }
 
     @GetMapping("/id={id}")

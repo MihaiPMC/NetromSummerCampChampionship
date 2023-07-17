@@ -1,34 +1,22 @@
-function makeTable(container, data) {
-    var table = $("<table/>").addClass("playerTable");
-    var headerRow = $("<tr/>");
-    headerRow.append($("<th/>").text("ID"));
-    headerRow.append($("<th/>").text("FirstName"));
-    headerRow.append($("<th/>").text("LastName"));
-    headerRow.append($("<th/>").text("Age"));
-    headerRow.append($("<th/>").text("Team"));
-    table.append(headerRow);
-
-    $.each(data, function (rowIndex, r) {
-        var row = $("<tr/>");
-
-        var idCell = $("<td/>").text(r.id);
-        idCell.click(function () {
-            deletePlayer(r.id);
-        });
-        row.append(idCell);
-
-        $.each(r, function (colIndex, c) {
-            if (colIndex == "team") {
-                row.append($("<td/>").text(r.team.name));
-            } else if (colIndex != "id") {
-                row.append($("<td/>").text(c));
-            }
-        });
-
-        table.append(row);
+function makeTable(data) {
+    var table = $('#playerTable').DataTable({
+        data: data,
+        columns: [
+            {
+                data: 'id',
+                className: 'deletePlayer' // Add a class to the ID column cells
+            },
+            { data: 'firstName' },
+            { data: 'lastName' },
+            { data: 'age' },
+            { data: 'team.name' }
+        ]
     });
 
-    return container.append(table);
+    $('#playerTable tbody').on('click', 'td.deletePlayer', function () { // Attach the click event to the ID column cells
+        var data = table.row(this).data();
+        deletePlayer(data.id);
+    });
 }
 
 function deletePlayer(playerId) {
@@ -50,7 +38,6 @@ function deletePlayer(playerId) {
     }
 }
 
-
 function showForm() {
     var addForm = document.getElementById("addForm");
 
@@ -64,15 +51,13 @@ function showForm() {
     }
 }
 
-
 $(document).ready(function () {
     $.ajax({
         url: "http://localhost:8080/player/all",
         type: "GET",
         dataType: "json",
         success: function (data) {
-            var playerTableContainer = $("#playerTableContainer");
-            makeTable(playerTableContainer, data);
+            makeTable(data);
         },
         error: function (data) {
             alert('Error: ' + data);
