@@ -26,7 +26,7 @@ public class GameService {
         String gameType = game.getType();
 
         if (team2Name.equals(team1Name)) {
-            throw new IllegalArgumentException("Team names are equal");
+            throw new IllegalArgumentException("Team names are the same");
         }
 
         game.setTeam1(teamRepository.findByNameAndType(team1Name, gameType));
@@ -37,11 +37,21 @@ public class GameService {
             gameRepository.save(game);
         }
         else {
-            System.out.println("Game team is null");
+            throw new Error("Team with name " + team1Name + " or " + team2Name + " and type " + gameType + " does not exist");
         }
     }
 
     public void updateGame(Game game) {
+        String team1Name = game.getTeam1().getName();
+        String team2Name = game.getTeam2().getName();
+        String gameType = game.getType();
+
+        if (team2Name.equals(team1Name)) {
+            throw new IllegalArgumentException("Team names are the same");
+        }
+
+        game.setTeam1(teamRepository.findByNameAndType(team1Name, gameType));
+        game.setTeam2(teamRepository.findByNameAndType(team2Name, gameType));
 
         if (game.getTeam1() != null && game.getTeam2() != null) {
             gameRepository.save(game);

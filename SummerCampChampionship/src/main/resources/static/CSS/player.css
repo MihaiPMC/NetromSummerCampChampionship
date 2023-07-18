@@ -87,7 +87,7 @@
 }
 
 #playerTable tr:nth-child(even) {
-    background-color:  #B0E0E6
+    background-color: #B0E0E6;
 }
 
 #playerTable tr:nth-child(odd) {
@@ -113,4 +113,36 @@
 
 #playerTable td:last-child {
     border-right: 0;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-padding {
+    padding-right: 11rem;
+}
+
+#playerTable tbody td.deletePlayer:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#playerTable tbody td.deletePlayer:hover::after {
+    content: "\f1f8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    right: -10px;
+}
+
+.editField {
+    display: none;
+}
+
+.saveChanges {
+    display: none;
 }

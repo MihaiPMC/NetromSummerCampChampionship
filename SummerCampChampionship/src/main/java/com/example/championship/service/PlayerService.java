@@ -20,22 +20,34 @@ public class PlayerService {
     }
 
     public void addPlayer(Player player) {
-        if (teamRepository.findById(player.getTeam().getId()).isPresent()){
+        String teamName = player.getTeam().getName();
+        String gameType = player.getTeam().getType();
+
+        player.setTeam(teamRepository.findByNameAndType(teamName, gameType));
+        player.setType(gameType);
+
+        if (player.getTeam() != null){
             playerRepository.save(player);
         }
         else
         {
-            throw new Error("Team with id " + player.getTeam().getId() + " does not exist");
+            throw new Error("Team with name " + teamName + " and type " + gameType + " does not exist");
         }
     }
 
     public void updatePlayer(Player player) {
-        if (teamRepository.findById(player.getTeam().getId()).isPresent()){
+        String teamName = player.getTeam().getName();
+        String gameType = player.getTeam().getType();
+
+        player.setTeam(teamRepository.findByNameAndType(teamName, gameType));
+        player.setType(gameType);
+
+        if (player.getTeam() != null){
             playerRepository.save(player);
         }
         else
         {
-            throw new Error("Team with id " + player.getTeam().getId() + " does not exist");
+            throw new Error("Team with name " + teamName + " and type " + gameType + " does not exist");
         }
     }
 

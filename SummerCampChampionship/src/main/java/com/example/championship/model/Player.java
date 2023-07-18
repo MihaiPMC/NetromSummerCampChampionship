@@ -23,6 +23,9 @@ public class Player {
     @Column(name = "player_age")
     private int age;
 
+    @Column(name = "type")
+    private String type;
+
     //@JsonIgnore
     @ManyToOne
     @JoinColumn(name = "team_id")
