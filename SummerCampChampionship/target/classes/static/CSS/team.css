@@ -1,3 +1,7 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
 #addForm {
     background-color: #f0f0f0;
     border-radius: 10px;
@@ -108,3 +112,37 @@
     border-right: 0;
 }
 
+
+.burger {
+    background-color: #17a2b8;
+    font-size: x-large;
+    color: #FFFFF0;
+    border: none;
+    padding: 0;
+}
+
+.burger:hover {
+    background-color: #17a2b8;
+    font-size: x-large;
+    color: #000000;
+    border: none;
+    padding: 0;
+}
+
+.appName {
+    color: #FFFFF0;
+}
+
+
+.buton {
+    background-color: #17a2b8;
+    border: none;
+    padding: 0;
+    padding-left: 0.7em;
+}
+
+.buton :hover {
+    background-color: #17a2b8;
+    border: none;
+    padding: 0;
+}
