@@ -8,12 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/player.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/player.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/GameTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/PlayerTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS/TeamTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,7 @@
       <workItem from="1689246944940" duration="41270000" />
       <workItem from="1689591629621" duration="46000" />
       <workItem from="1689591682917" duration="23723000" />
-      <workItem from="1689763726135" duration="7375000" />
+      <workItem from="1689763726135" duration="8694000" />
     </task>
     <servers />
   </component>

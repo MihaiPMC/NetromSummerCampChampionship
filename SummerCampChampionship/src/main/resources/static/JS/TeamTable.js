@@ -59,15 +59,15 @@ function showForm() {
     var addForm = document.getElementById("addForm");
 
     // Toggle addForm visibility
-    if (addForm.style.opacity !== "0") {
-        addForm.style.opacity = "0";
-        addForm.style.height = "0";
-    } else {
-        addForm.style.opacity = "1";
+    if (addForm.style.display !== "block") {
+        addForm.style.display = "block";
+        addForm.style.height = "auto";
+    }
+    else {
+        addForm.style.display = "none";
         addForm.style.height = "auto";
     }
 }
-
 
 $(document).ready(function () {
     $.ajax({
