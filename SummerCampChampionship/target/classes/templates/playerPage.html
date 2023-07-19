@@ -3,7 +3,7 @@
 <head>
     <title>Player</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.css"/>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.js"></script>
     <script src="/JS/PlayerTable.js"></script>
     <link rel="stylesheet" href="/CSS/player.css">
@@ -28,10 +28,10 @@
         </thead>
         <tbody id="playerTableContainer"></tbody>
     </table>
-
-    <button id="addPlayerButton" onclick="showForm()">New Player</button>
-    <button id="submitDeleteAllFormButton">Delete All</button>
-
+    <div class="buttons-container">
+        <button id="addPlayerButton" onclick="showForm()">New Player</button>
+        <button id="submitDeleteAllFormButton">Delete All</button>
+    </div>
     <form id="addForm">
         <input type="text" id="firstNameInput" placeholder="First Name">
         <input type="text" id="lastNameInput" placeholder="Last Name">

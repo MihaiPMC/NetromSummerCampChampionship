@@ -34,9 +34,16 @@ function makeTable(data) {
     }
 
     $('#playerTable tbody').on('dblclick', 'tr', function () {
-        // Toggle visibility of data and edit fields
-        $(this).find('.data, .editField, .saveChanges').toggle();
+        // Collapse any other editable rows
+        $('#playerTable tbody tr').not(this).each(function () {
+            $(this).find('.data, .editField, .saveChanges').hide();
+            $(this).find('.data').show();
+        });
+
+        // Expand current row except the first td (ID)
+        $(this).find('td:not(:first-child)').find('.data, .editField, .saveChanges').toggle();
     });
+
 
     $('#playerTable tbody').on('click', '.saveChanges', function () {
         // Save changes

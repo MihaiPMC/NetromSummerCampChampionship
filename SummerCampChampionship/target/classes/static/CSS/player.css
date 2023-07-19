@@ -141,8 +141,39 @@
 
 .editField {
     display: none;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.editField {
+    display: none;
+    border: 1px solid #C4D8E2; /* Add a border around the input field */
+    padding: 5px; /* Give some space inside the input field */
+    border-radius: 5px; /* Give the border some rounded corners */
+    width: 90%; /* Make sure the input field fits inside its container */
+    box-sizing: border-box; /* Include the padding and border inside the element's total width and height */
 }
 
 .saveChanges {
     display: none;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    background-color: #28a745;
+    color: white;
+    margin-left: 5px;
+}
+
+.saveChanges:hover {
+    background-color: #1e6b34;
 }
