@@ -18,26 +18,37 @@
     margin-left: 10px;
 }
 
-#submitAddFormButton, #submitDeleteAllFormButton, #addPlayerButton {
+#submitAddFormButton {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 8px 16px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display inline */
+    font-size: 16px; /* Change font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    transition-duration: 0.4s; /* Transition */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); /* Add a shadow */
+}
+#addPlayerButton, #submitDeleteAllFormButton {
+    border-radius: 10px;
+    transition-duration: 0.3s;
     border: none;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.4s;
+    color: #fff;
 }
 
 #addPlayerButton {
-    background-color: #007bff;
+    background-color: #17a2b8;
 }
 
 #addPlayerButton:hover {
-    background-color: #004fa3;
-    color: white;
+    background-color: #0F6674;
+    cursor: pointer;
 }
 
 #submitDeleteAllFormButton {
@@ -46,18 +57,13 @@
 
 #submitDeleteAllFormButton:hover {
     background-color: #a71e32;
-    color: white;
-}
-
-#submitAddFormButton {
-    background-color: #28a745;
+    cursor: pointer;
 }
 
 #submitAddFormButton:hover {
-    background-color: #1e6b34;
-    color: white;
+    background-color: #45a049; /* Make the background more green on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Increase the shadow on hover */
 }
-
 .tableAndButtons {
     text-align: -webkit-center;
     flex-direction: row;
@@ -176,4 +182,11 @@
 
 .saveChanges:hover {
     background-color: #1e6b34;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
