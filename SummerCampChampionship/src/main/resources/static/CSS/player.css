@@ -11,13 +11,21 @@ body {
     display: none;
     height: 0;
     overflow: hidden;
-    width: 50%;
+    width: 55%;
 }
 
 #addForm input[type="text"] {
     margin-right: 10px;
     padding: 6px;
     width: 150px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#addForm input[type="number"] {
+    margin-right: 10px;
+    padding: 6px;
+    width: 75px;
     border-radius: 5px;
     margin-left: 10px;
 }
@@ -79,13 +87,21 @@ body {
 }
 
 #playerTable {
-    width: 90%;
+    width: 95% !important;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
 }
+
+#playerTable_filter input {
+    margin: 1rem;
+    margin-right: 3rem;
+}
+
+
+
 
 #playerTable th {
     background-color: #C4D8E2;
@@ -132,11 +148,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1em;
+}
+
+#howMany{
+    margin-left: 3em;
 }
 
 .pagination-padding {
-    padding-right: 11rem;
+    padding-right: 14rem;
 }
 
 #playerTable tbody td.deletePlayer:hover {

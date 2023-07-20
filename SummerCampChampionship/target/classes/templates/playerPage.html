@@ -47,7 +47,7 @@
     </div>
 </div>
 <div id="tableAndButtonsContainer" class="tableAndButtons">
-    <table id="playerTable" class="display">
+    <table id="playerTable" class="display" style="">
         <thead>
         <tr>
             <th>ID</th>
@@ -66,11 +66,11 @@
         <button id="submitDeleteAllFormButton">Delete All</button>
     </div>
     <form id="addForm">
-        <input type="text" id="firstNameInput" placeholder="First Name">
-        <input type="text" id="lastNameInput" placeholder="Last Name">
-        <input type="text" id="ageInput" placeholder="Age">
-        <input type="text" id="typeInput" placeholder="Type">
-        <input type="text" id="teamNameInput" placeholder="TeamName">
+        <input type="text" id="firstNameInput" placeholder="First Name" required minlength="2">
+        <input type="text" id="lastNameInput" placeholder="Last Name" required minlength="2">
+        <input type="number" id="ageInput" placeholder="Age" required min="10" max="100">
+        <input type="text" id="typeInput" placeholder="Type" required>
+        <input type="text" id="teamNameInput" placeholder="Team Name" required>
         <button id="submitAddFormButton">Submit</button>
     </form>
 </div>

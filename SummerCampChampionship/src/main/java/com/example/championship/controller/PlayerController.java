@@ -3,6 +3,8 @@ package com.example.championship.controller;
 import com.example.championship.model.Player;
 import com.example.championship.service.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,14 +35,24 @@ public class PlayerController {
     }
 
     @PostMapping("/add")
-    public void addPlayer( @RequestBody Player player) {
-        playerService.addPlayer(player);
+    public ResponseEntity<?> addPlayer(@RequestBody Player player) {
+        try {
+            playerService.addPlayer(player);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Error e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @PostMapping("/update")
-    public void updatePlayer(@RequestBody Player player) {
 
-        playerService.updatePlayer(player);
+    @PostMapping("/update")
+    public ResponseEntity<?> updatePlayer(@RequestBody Player player) {
+        try {
+            playerService.updatePlayer(player);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Error e) {
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @DeleteMapping("/delete")
