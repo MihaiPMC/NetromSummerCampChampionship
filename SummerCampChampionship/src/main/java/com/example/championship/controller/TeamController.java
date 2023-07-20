@@ -4,6 +4,8 @@ package com.example.championship.controller;
 import com.example.championship.model.Team;
 import com.example.championship.service.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -33,13 +35,23 @@ public class TeamController {
 
 
     @PostMapping("/add")
-    public void addTeam(@RequestBody Team team) {
-        teamService.addTeam(team);
+    public ResponseEntity<?> addTeam(@RequestBody Team team) {
+        try {
+            teamService.addTeam(team);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }catch(Error e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
-    @PutMapping("/update")
-    public void updateTeam(@RequestBody Team team) {
-        teamService.updateTeam(team);
+    @PostMapping("/update")
+    public ResponseEntity<?> updateTeam(@RequestBody Team team) {
+        try {
+            teamService.updateTeam(team);
+            return new ResponseEntity<>(HttpStatus.OK);
+        }catch(Error e){
+            return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
     @DeleteMapping("/delete")

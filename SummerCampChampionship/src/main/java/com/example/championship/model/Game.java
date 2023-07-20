@@ -32,6 +32,8 @@ public class Game {
     @Column(name = "type")
     private String type;
 
+    @Column(name= "date")
+    private String date;
 
 
 }

@@ -11,7 +11,7 @@ body {
     display: none;
     height: 0;
     overflow: hidden;
-    width: 60%;
+    width: 55%;
 }
 
 #addForm input[type="text"] {
@@ -22,26 +22,47 @@ body {
     margin-left: 10px;
 }
 
-#submitAddFormButton, #submitDeleteAllFormButton, #addGameButton {
+#addForm input[type="number"] {
+    margin-right: 10px;
+    padding: 6px;
+    width: 75px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#submitAddFormButton {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 8px 16px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display inline */
+    font-size: 16px; /* Change font size */
+    margin: 4px 2px; /* Some margin */
+    cursor: pointer; /* Pointer/hand icon */
+    transition-duration: 0.4s; /* Transition */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15); /* Add a shadow */
+}
+
+#addGameButton, #submitDeleteAllFormButton {
+    border-radius: 10px;
+    transition-duration: 0.3s;
     border: none;
+    margin-top: 20px;
     padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    transition-duration: 0.4s;
+    color: #fff;
 }
 
 #addGameButton {
-    background-color: #007bff;
+    background-color: #17a2b8;
 }
 
 #addGameButton:hover {
-    background-color: #004fa3;
-    color: white;
+    background-color: #0F6674;
+    cursor: pointer;
 }
 
 #submitDeleteAllFormButton {
@@ -50,16 +71,12 @@ body {
 
 #submitDeleteAllFormButton:hover {
     background-color: #a71e32;
-    color: white;
-}
-
-#submitAddFormButton {
-    background-color: #28a745;
+    cursor: pointer;
 }
 
 #submitAddFormButton:hover {
-    background-color: #1e6b34;
-    color: white;
+    background-color: #45a049; /* Make the background more green on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); /* Increase the shadow on hover */
 }
 
 .tableAndButtons {
@@ -69,8 +86,8 @@ body {
     align-items: center;
 }
 
-.gameTable {
-    width: 90%;
+#gameTable {
+    width: 95% !important;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 10px;
@@ -78,37 +95,124 @@ body {
     margin-bottom: 20px;
 }
 
-.gameTable th {
-    background-color: #f2f2f2;
+#gameTable_filter input {
+    margin: 1rem;
+    margin-right: 3rem;
+}
+
+#gameTable th {
+    background-color: #C4D8E2;
     color: #333;
     font-weight: bold;
     padding: 8px;
     text-align: left;
 }
 
-.gameTable tr:nth-child(even) {
+#gameTable tr {
     background-color: #f9f9f9;
 }
 
-.gameTable tr:nth-child(odd) {
-    background-color: #eaf0f6;
+#gameTable tr:nth-child(even) {
+    background-color: #B0E0E6;
 }
 
-.gameTable td {
+#gameTable tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#gameTable tr:hover {
+    background-color: #87CEEB;
+}
+
+#gameTable td {
     padding: 6px;
     border-bottom: 1px solid #ccc;
 }
 
-.gameTable tr:last-child td {
+#gameTable tr:last-child td {
     border-bottom: 0;
 }
 
-.gameTable td {
+#gameTable td {
     border-right: 1px solid #ccc;
 }
 
-.gameTable td:last-child {
+#gameTable td:last-child {
     border-right: 0;
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+#howMany{
+    margin-left: 3em;
+}
+
+.pagination-padding {
+    padding-right: 14rem;
+}
+
+#gameTable tbody td.deleteGame:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#gameTable tbody td.deleteGame:hover::after {
+    content: "\f1f8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: relative;
+    right: -10px;
+}
+
+.editField {
+    display: none;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.editField {
+    display: none;
+    border: 1px solid #C4D8E2; /* Add a border around the input field */
+    padding: 5px; /* Give some space inside the input field */
+    border-radius: 5px; /* Give the border some rounded corners */
+    width: 90%; /* Make sure the input field fits inside its container */
+    box-sizing: border-box; /* Include the padding and border inside the element's total width and height */
+}
+
+.saveChanges {
+    display: none;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    background-color: #28a745;
+    color: white;
+    margin-left: 5px;
+}
+
+.saveChanges:hover {
+    background-color: #1e6b34;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 

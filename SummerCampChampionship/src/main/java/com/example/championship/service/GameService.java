@@ -33,11 +33,18 @@ public class GameService {
         game.setTeam2(teamRepository.findByNameAndType(team2Name, gameType));
 
 
-        if (game.getTeam1() != null && game.getTeam2() != null) {
-            gameRepository.save(game);
+        if (game.getTeam1() == null && game.getTeam2() == null) {
+            throw new Error("Team with name " + team1Name + " or " + team2Name + " and type " + gameType + " does not exist");
+        }
+
+        else if (game.getTeam1() == null) {
+            throw new Error("Team with name " + team1Name + " and type " + gameType + " does not exist");
+        }
+        else if (game.getTeam2() == null) {
+            throw new Error("Team with name " + team2Name + " and type " + gameType + " does not exist");
         }
         else {
-            throw new Error("Team with name " + team1Name + " or " + team2Name + " and type " + gameType + " does not exist");
+            gameRepository.save(game);
         }
     }
 
@@ -53,11 +60,18 @@ public class GameService {
         game.setTeam1(teamRepository.findByNameAndType(team1Name, gameType));
         game.setTeam2(teamRepository.findByNameAndType(team2Name, gameType));
 
-        if (game.getTeam1() != null && game.getTeam2() != null) {
-            gameRepository.save(game);
+        if (game.getTeam1() == null && game.getTeam2() == null) {
+            throw new Error("Team with name " + team1Name + " or " + team2Name + " and type " + gameType + " does not exist");
+        }
+
+        else if (game.getTeam1() == null) {
+            throw new Error("Team with name " + team1Name + " and type " + gameType + " does not exist");
+        }
+        else if (game.getTeam2() == null) {
+            throw new Error("Team with name " + team2Name + " and type " + gameType + " does not exist");
         }
         else {
-            System.out.println("Game team is null");
+            gameRepository.save(game);
         }
     }
 
@@ -90,10 +104,8 @@ public class GameService {
             default -> gameRepository.findAll();
         };
 
-        if(ord == "desc")
-        {
-            for(int i = 0; i < print.size()/2; i++)
-            {
+        if (ord == "desc") {
+            for (int i = 0; i < print.size() / 2; i++) {
                 Game temp = print.get(i);
                 print.set(i, print.get(print.size() - i - 1));
                 print.set(print.size() - i - 1, temp);

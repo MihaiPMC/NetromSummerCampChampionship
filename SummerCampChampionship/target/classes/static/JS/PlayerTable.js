@@ -126,7 +126,7 @@ function makeTable(data) {
             },
             error: function (error) {
                 console.log('Error:', error);
-                alert(error.responseText)
+                alert(error.responseText);
                 window.location.reload();
             }
         });

@@ -46,16 +46,32 @@
 </div>
 
 <div id="tableAndButtonsContainer" class="tableAndButtons">
-    <div id="gameTableContainer"></div>
-
-    <button id="addGameButton" onclick="showForm()">New Game</button>
-    <button id="submitDeleteAllFormButton">Delete All</button>
+    <table id="gameTable" class="display" style="">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Team1</th>
+            <th>Team2</th>
+            <th>ScoreTeam1</th>
+            <th>ScoreTeam2</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="gameTableContainer"></tbody>
+    </table>
+    <div class="buttons-container">
+        <button id="addGameButton" onclick="showForm()">New Game</button>
+        <button id="submitDeleteAllFormButton">Delete All</button>
+    </div>
     <form id="addForm">
-        <input type="text" id="gameTypeInput" placeholder="Type">
-        <input type="text" id="firstTeamInput" placeholder="First Team">
-        <input type="text" id="secondTeamInput" placeholder="Second Team">
-        <input type="text" id="score1Input" placeholder="ScoreTeam1">
-        <input type="text" id="score2Input" placeholder="ScoreTeam2">
+        <input type="text" id="type" placeholder="Type" required>
+        <input type="text" id="team1" placeholder="Team1" required minlength="2">
+        <input type="text" id="team2" placeholder="Team2" required minlength="2">
+        <input type="number" id="scoreTeam1" placeholder="ScoreTeam1" required>
+        <input type="number" id="scoreTeam2" placeholder="ScoreTeam2" required>
+        <input type="text" id="date" placeholder="Date" required>
         <button id="submitAddFormButton">Submit</button>
     </form>
 </div>
