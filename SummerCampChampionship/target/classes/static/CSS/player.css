@@ -100,9 +100,6 @@ body {
     margin-right: 3rem;
 }
 
-
-
-
 #playerTable th {
     background-color: #C4D8E2;
     color: #333;
@@ -120,7 +117,7 @@ body {
 }
 
 #playerTable tr:nth-child(odd) {
-    background-color: #FFFFF0;
+    background-color: #f9f9f9;
 }
 
 #playerTable tr:hover {

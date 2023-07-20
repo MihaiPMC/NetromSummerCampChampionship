@@ -24,4 +24,9 @@ public class ViewController {
     public String getGamesPage() {
         return "gamePage";
     }
+
+    @GetMapping("/turnament")
+    public String getTurnamentPage() {
+        return "turnament";
+    }
 }

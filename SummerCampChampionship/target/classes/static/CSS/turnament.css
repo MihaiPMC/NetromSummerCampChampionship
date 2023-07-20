@@ -4,21 +4,21 @@ body {
 
 .burger {
     background-color: #17a2b8;
-    font-size:x-large;
-    color:#FFFFF0;
-    border:none;
-    padding:0;
+    font-size: x-large;
+    color: #FFFFF0;
+    border: none;
+    padding: 0;
 }
 
 .burger:hover {
     background-color: #17a2b8;
-    font-size:x-large;
+    font-size: x-large;
     color: #000000;
-    border:none;
-    padding:0;
+    border: none;
+    padding: 0;
 }
 
-.appName{
+.appName {
     color: #FFFFF0;
 }
 
@@ -29,12 +29,9 @@ body {
     padding: 0;
     padding-left: 0.7em;
 }
-.buton :hover{
+
+.buton :hover {
     background-color: #17a2b8;
     border: none;
     padding: 0;
-}
-
-.player, .game, .team, .turnament{
-    width: 6.5em;
 }
