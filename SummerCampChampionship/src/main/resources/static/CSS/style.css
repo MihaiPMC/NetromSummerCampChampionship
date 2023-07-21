@@ -35,6 +35,40 @@ body {
     padding: 0;
 }
 
+/* Button classes */
+
 .player, .game, .team, .turnament{
-    width: 6.5em;
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.player {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.game {
+    background-color: #28A745;
+    color: #FFFFFF;
+}
+
+.team {
+    background-color: #DC3545;
+    color: #FFFFFF;
+}
+
+.turnament {
+    background-color: #6F42C1;
+    color: #FFFFFF;
+}
+
+.offcanvas-body a.player, .offcanvas-body a.game, .offcanvas-body a.team, .offcanvas-body a.turnament {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
