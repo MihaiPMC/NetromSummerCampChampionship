@@ -60,27 +60,27 @@ function makeTable(data) {
         // Validation
         var errorMessage = "";
 
-        if(team1.length === 0)
+        if(!team1 || team1.length === 0)
         {
             errorMessage += "Team1 name cannot be empty\n";
         }
-        if(team2.length === 0)
+        if(!team2 || team2.length === 0)
         {
             errorMessage += "Team2 name cannot be empty\n";
         }
-        if(scoreTeam1.length === 0)
+        if(!scoreTeam1 || scoreTeam1.length === 0)
         {
             errorMessage += "Score1 cannot be empty\n";
         }
-        if(scoreTeam2.length === 0)
+        if(!scoreTeam2 || scoreTeam2.length === 0)
         {
             errorMessage += "Score2 cannot be empty\n";
         }
-        if(teamType.length === 0)
+        if(!teamType || teamType.length === 0)
         {
             errorMessage += "Type cannot be empty\n";
         }
-        if(date.length === 0)
+        if(!date || date.length === 0)
         {
             errorMessage += "Date cannot be empty\n";
         }
@@ -202,12 +202,12 @@ $(document).ready(function () {
     $('#submitAddFormButton').click(function (e) {
         e.preventDefault();
 
-        var team1 = $('#team1Input').val();
-        var team2 = $('#team2Input').val();
-        var score1 = $('#score1Input').val();
-        var score2 = $('#score2Input').val();
-        var gameType = $('#typeInput').val();
-        var date = $('#dateInput').val();
+        var team1 = $('#team1').val();
+        var team2 = $('#team2').val();
+        var score1 = $('#scoreTeam1').val();
+        var score2 = $('#scoreTeam2').val();
+        var gameType = $('#type').val();
+        var date = $('#date').val();
 
         var data = {
             "team1": {
@@ -225,36 +225,36 @@ $(document).ready(function () {
         // Validation
         var errorMessage = "";
 
-        if(team1.length === 0)
+        if(!team1 || team1.length === 0)
         {
             errorMessage += "Team1 name cannot be empty\n";
         }
-        if(team2.length === 0)
+        if(!team2 || team2.length === 0)
         {
             errorMessage += "Team2 name cannot be empty\n";
         }
-        if(scoreTeam1.length === 0)
+        if(!scoreTeam1 || scoreTeam1.length === 0)
         {
             errorMessage += "Score1 cannot be empty\n";
         }
-        if(scoreTeam2.length === 0)
+        if(!scoreTeam2 || scoreTeam2.length === 0)
         {
             errorMessage += "Score2 cannot be empty\n";
         }
-        if(teamType.length === 0)
+        if(!gameType || gameType.length === 0)
         {
             errorMessage += "Type cannot be empty\n";
         }
-        if(date.length === 0)
+        if(!date || date.length === 0)
         {
             errorMessage += "Date cannot be empty\n";
         }
 
-        if(isNaN(scoreTeam1))
+        if(isNaN(score1))
         {
             errorMessage += "Score1 must be a number\n";
         }
-        if(isNaN(scoreTeam2))
+        if(isNaN(score2))
         {
             errorMessage += "Score2 must be a number\n";
         }

@@ -48,11 +48,11 @@ function makeTable(data) {
 
         var errorMessage = "";
 
-        if (name.length === 0) {
+        if (!name || name.length === 0) {
             errorMessage += "Name cannot be empty\n";
         }
 
-        if (teamType.length === 0) {
+        if (!teamType || teamType.length === 0) {
             errorMessage += "Type cannot be empty\n";
         }
 
@@ -150,20 +150,20 @@ $(document).ready(function () {
     $('#submitAddFormButton').click(function (e) {
         e.preventDefault();
         var name = $('#nameInput').val();
-        var gametype = $('#typeInput').val();
+        var teamType = $('#typeInput').val();
 
         var data = {
             name: name,
-            type: gametype
+            type: teamType
         };
 
         var errorMessage = "";
 
-        if (name.length === 0) {
+        if (!name || name.length === 0) {
             errorMessage += "Name cannot be empty\n";
         }
 
-        if (teamType.length === 0) {
+        if (!teamType || teamType.length === 0) {
             errorMessage += "Type cannot be empty\n";
         }
 
