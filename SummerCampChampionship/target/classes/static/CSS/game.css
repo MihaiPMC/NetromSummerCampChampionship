@@ -11,7 +11,7 @@ body {
     display: none;
     height: 0;
     overflow: hidden;
-    width: 55%;
+    width: 60%;
 }
 
 #addForm input[type="text"] {
@@ -26,6 +26,14 @@ body {
     margin-right: 10px;
     padding: 6px;
     width: 75px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+#addForm input[type="date"] {
+    margin-right: 10px;
+    padding: 6px;
+    width: 150px;
     border-radius: 5px;
     margin-left: 10px;
 }
@@ -148,7 +156,7 @@ body {
     margin-top: 1em;
 }
 
-#howMany{
+#howMany {
     margin-left: 3em;
 }
 
@@ -258,7 +266,7 @@ body {
     text-align: center;
 }
 
-.player, .game, .team, .turnament{
+.player, .game, .team, .turnament {
     width: 200px;
     height: 60px;
     font-size: 18px;

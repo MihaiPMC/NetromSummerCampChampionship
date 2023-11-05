@@ -11,7 +11,7 @@ body {
     display: none;
     height: 0;
     overflow: hidden;
-    width: 55%;
+    width: 30%;
 }
 
 #addForm input[type="text"] {

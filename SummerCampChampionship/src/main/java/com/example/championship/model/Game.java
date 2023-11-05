@@ -1,8 +1,12 @@
 package com.example.championship.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "game")
@@ -33,7 +37,9 @@ public class Game {
     private String type;
 
     @Column(name= "date")
-    private String date;
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate date;
+
 
 
 }
