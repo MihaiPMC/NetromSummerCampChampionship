@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c199b3a-2ac4-4a71-97f0-40d8e4742024" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/java/com/example/championship/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/gamePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/playerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/teamPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/turnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates/turnament.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/com/example/championship/model/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/game.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/game.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/team.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/team.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/gamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/gamePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/static/CSS/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/playerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/playerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/teamPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/teamPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/turnament.html" beforeDir="false" afterPath="$PROJECT_DIR$/SummerCampChampionship/target/classes/templates/turnament.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +30,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MihaiPMC&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:MihaiPMC/NetromSummerCampChampionship.git&quot;,
+    &quot;accountId&quot;: &quot;ed08a68c-cc92-4a52-9ee8-ac8e4cf003d1&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -54,40 +53,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mihai/Info/Netrom/SummerCamp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;01c81308522327b0b7ecdeb6bdc7bf9c&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ChampionshipApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "new-main-page",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/mihai/Info/Netrom/SummerCamp",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "spring.configuration.checksum": "01c81308522327b0b7ecdeb6bdc7bf9c",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/assets" />
+      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/JS" />
       <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static/CSS" />
-      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources/template" />
-      <recent name="$PROJECT_DIR$/SummerCampChampionship/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ChampionshipApplication">
@@ -128,10 +130,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.SummerCampChampionship: Compose Deployment" />
         <item itemvalue="Docker.SummerCampChampionship.db: Compose Deployment" />
+        <item itemvalue="Docker.SummerCampChampionship: Compose Deployment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -167,7 +177,18 @@
       <workItem from="1696825977451" duration="45000" />
       <workItem from="1697785156410" duration="2340000" />
       <workItem from="1698142052575" duration="51000" />
-      <workItem from="1699200625541" duration="298000" />
+      <workItem from="1699200625541" duration="802000" />
+      <workItem from="1699252319808" duration="127000" />
+      <workItem from="1699252514144" duration="1926000" />
+      <workItem from="1699353562129" duration="921000" />
+      <workItem from="1699958452590" duration="717000" />
+      <workItem from="1713848001366" duration="2059000" />
+      <workItem from="1713850089245" duration="6570000" />
+      <workItem from="1713978878570" duration="7051000" />
+      <workItem from="1714079468228" duration="1125000" />
+      <workItem from="1714124715243" duration="466000" />
+      <workItem from="1714125578634" duration="1711000" />
+      <workItem from="1714768031458" duration="5975000" />
     </task>
     <servers />
   </component>
